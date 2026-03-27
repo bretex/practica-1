@@ -1,0 +1,31 @@
+/* Regla para rellenar los bordes */
+body{
+    margin: 0;
+}
+.encabezado{
+    background-color: rgb(46, 50, 79);
+    padding: 20px;
+    display: flex;  /* para alinear los elementos*/
+    justify-content: space-between; /* Para mover el contenido*/
+    align-items: center;
+}
+.titulo{
+    color: azure;
+}
+/*Para quitar los margenes de las etiquetas <p>*/
+.encabezado p{
+    margin: 0;
+}
+.encabezado a:hover{
+    color: chartreuse;
+}
+.encabezado a:visited{
+    color:yellow;
+}
+.navegacion{
+    display: flex;
+    gap: 40px;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+}
+

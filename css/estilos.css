@@ -1,0 +1,16 @@
+* {
+    font-family: Arial;
+}
+.biografia {
+    color:yellowgreen;
+}
+#Cap1 {
+    color: blueviolet;
+}
+p{
+    color:rgb(114, 9, 9);
+}
+.capLinks a:hover {
+    background-color: blue;
+    color: white;
+}

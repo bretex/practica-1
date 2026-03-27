@@ -1,0 +1,114 @@
+<!DOCTYPE html> <!--indica la version del html que estamos ocupando-->
+<!--Las etiquestas tienen un inicio y un final, delimitan el html-->
+<html lang="es">
+<head> <!--No es visible para el usuario es lo primero que se desea cargar-->
+    <title>BrettCL</title>
+    <link rel="stylesheet" href="/css/estilos.css">
+</head>
+<body> <!--Visible para el usuario, cuerpo de la pagina-->
+    <h1 id="Inicio">Biografía de Brett Cornejo</h1> <!--Es para titulos, subtitulos etc, va desde h1 hasta h6 siendo h6 el mas pequeño-->
+    <div class="biografia">
+        <p>Mini Biografía de la <u>vida de brett</u></p> <!--la etiqueta p es un parrafo-->
+    </div>
+    <h2>Indice</h2>
+    <div class="capLinks">
+        <p><a href="#Cap1">Ir al capitulo 1</a></p><!--La etiqueta a es para los links href signfica referencia a un hipervinculo.-->
+        <p><a href="#Cap2">Ir al capitulo 2</a></p>
+        <p><a href="#Cap3">Ir al capitulo 3</a></p>
+    </div>
+    
+    <br> <!--Manera de hacer espacio ya que html solo entiende de etiquetas-->
+    <!--u es para letras con una linea por debajo-->
+    <!--b es para la letra negrita-->
+    <!--i para la letra cursiva-->
+    <h2 id="Cap1">Capitulo 1</h2> <!--Las id sirven para eso darles una id a cada sección y asi usarlas de una manera más simple en el caso de volver o redireccionar-->
+    <p>Brett nacio en antofagasta un 11 de noviembre de 2004</p>
+    <p>Imagen de brett</p>
+    <img src="/Imagenes/Fat hamster.jpg" width="300"> <!--La etiqueta img es para una imagen cualquiera es una etiqueta que abre y cierra de una-->
+    <!--widht es el ancho de los pixeles y height el alto de estos-->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore dolor aspernatur magnam quaerat, provident a sed temporibus mollitia, ab minus commodi delectus iure eaque veniam ratione vitae vel ex repellendus!</p>
+    <br>
+    <h2 id="Cap2">Capitulo 2</h2>
+    <p><u>Juega mucho valorant</u></p>
+    <p>Musica favorita</p>
+    <!--video se le agrega el sitio especifico en el que esta y se le agrega la etiqueta controls para los botones-->
+    <!--Si el video es de youtube o algun otro lugar se hace uso de iframe, para referenciar a ese html-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/WHwHXHBwwR8?si=rYvzI0K0kJsNiQU0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis quae, perspiciatis pariatur recusandae molestias laboriosam natus deleniti dolores minima modi earum cum dicta nostrum temporibus autem fugit, iusto ipsa id.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quo, dolores doloremque impedit debitis enim ratione saepe soluta minus obcaecati fugiat ullam. Minima quia dignissimos delectus officia modi, vitae qui.</p>
+    <br>
+    <h2 id="Cap3"> Capitulo 3</h2>
+    <p><b>Juega mucho lol</b></p>
+    <p>Tema favorito de rap</p>
+    <!--Audio tambien se le agrega control si no, no aparece en la pagina-->
+    <audio src="/Imagenes/Días Grises (feat. Ceaese & Yaero).mp3" controls></audio>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est iusto, odit, animi ipsa quasi eligendi laborum amet fugiat voluptatum rem esse asperiores dolore labore eum eos, vitae commodi doloribus eveniet?</p>
+    <br><br>
+    <!-- table etiquetapara hacer una tabla tr es para la fila de una tabla y th para una cabecera si se le agrega border a table se añaden bordes pero es mejor con CSS-->
+    <H2>Resumen de datos personales de Brettr</H2>
+    <table border="3">
+        <tr>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Edad</th>
+    </tr>
+    <tr>
+        <td>Brett</td>
+        <td>Cornejo</td>
+        <td>21</td>
+    </tr>
+    </table>
+    <h2>Lista de cosas que no me gustan</h2>
+    <ol>
+        <li>La guata</li>
+        <li>Higado</li>
+        <li>mi cuerpo</li>
+    </ol><br><br>
+    <h2>Lista de cosas que me gustan</h2>
+    <ul>
+        <li>Dormir</li>
+        <li>Quedarme en la casa</li>
+        <li>Comer muchooo</li>
+    </ul><br><br>
+    <h2>Formulario</h2>
+    <p>Si quieres una pagina de tu biografia como esta, entonces completa este formulario</p>
+
+    <form action="Pagina2.html" method="get"> <!--Apertura para un formulario
+        Action es la accion que pasa al completar el formulario y el metodo es el tipo de metodo que se usara para hacer tal accion-->
+        <!--La etiqueta label es para un elemento del formulario y for
+        se refiere a que input esta relacionado este elemento
+        input es una entrada de un formulario con type o tipo puede ser una contraseña, texto, numeros etc
+        el textarea es una caja de texto para ingresar multiples datos en el, la id es para que el label y el input se relacionen y que el codigo 
+        entienda que el elemento nombre esta relacionado o conectado con la entrada de nombre ademas de servir mas adelante con CSS-->
+
+        <p><label for="nombre">Nombre: <input type="text" id="nombre"></label></p>
+        <p><label for="apellido">Apellido: <input type="text" id="apellido"></label></p>
+        <p> <label for="edad">Edad: <input type="number" id="edad"></label></p>
+        <p><label for="motivo">Motivo: <textarea id="motivo" placeholder="Motivo del pq quiere su biografia"></textarea></label></p>
+
+        <!--El select es para desplegar mutiples opciones, y el selected es la opcion primaria osea la que se muestra de forma principal-->
+        <p><label for="estatura">Estatura:<select>
+            <option value="< 1,60"> <1,60 "</option>
+            <option value=" 1,60 a 1,70 " selected> 1,60 a 1,70</option>
+            <option value="1,70 a 1,80"> 1,70 a 1,80</option>
+            <option value=">1,80"> >1,80 </option>
+            <br>
+        </select></label></p>
+
+        <!--Las checkbox son opciones que se pueden seleccionar todas y las radio buttons solo se puede seleccionar una-->
+        <p>Juegos favoritos</p>
+        <label for="lol"> Lol <input type="checkbox" id="lol"></label>
+        <label for="valorant"> Valorant <input type="checkbox" id="valorant"></label>
+        <label for="Minecraft"> Minecraft <input type="checkbox" id="Minecraft"></label><br><br>
+        <p>Color favorito(Solo uno)</p>
+        <label for="rojo"><input type="radio" id="rojo" name="color"></label>
+        <label for="azul"><input type="radio" id="azul" name="color"></label>
+        <label for="morado"><input type="radio" id="morado" name="color"></label>
+        <label for="negro"><input type="radio" id="negro" name="color"></label><br><br>
+        <button type="submit">ENVIAR</button>
+    </form> 
+    <p><a href="#Inicio">Volver</a></p>   
+
+    
+</body>
+</html>
